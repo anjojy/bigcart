@@ -1,3 +1,5 @@
+import 'package:bigcart/Components/ProductCard.dart';
+import 'package:bigcart/Models/ProductModel.dart';
 import 'package:bigcart/Providers/Constants.dart';
 import 'package:flutter/material.dart';
 import 'Categories.dart';
@@ -21,6 +23,21 @@ class HomeBody extends StatelessWidget {
           ),
         ),
         Categories(),
+        Expanded(
+            child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+          child: GridView.builder(
+              itemCount: products.length,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.70,
+                  mainAxisSpacing: kDefaultPaddin,
+                  crossAxisSpacing: kDefaultPaddin),
+              itemBuilder: (context, index) => ProductCard(
+                    press: () {},
+                    product: products[index],
+                  )),
+        )),
       ],
     );
   }
