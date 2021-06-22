@@ -1,6 +1,7 @@
 import 'package:bigcart/Components/ProductCard.dart';
 import 'package:bigcart/Models/ProductModel.dart';
 import 'package:bigcart/Providers/Constants.dart';
+import 'package:bigcart/View/ProductDetailPage.dart';
 import 'package:flutter/material.dart';
 import 'Categories.dart';
 
@@ -34,7 +35,12 @@ class HomeBody extends StatelessWidget {
                   mainAxisSpacing: kDefaultPaddin,
                   crossAxisSpacing: kDefaultPaddin),
               itemBuilder: (context, index) => ProductCard(
-                    press: () {},
+                    press: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductDetailPage(
+                                  product: products[index],
+                                ))),
                     product: products[index],
                   )),
         )),
