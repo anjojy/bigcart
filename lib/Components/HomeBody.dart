@@ -1,6 +1,6 @@
 import 'package:bigcart/Components/ProductCard.dart';
+import 'package:bigcart/Constants/Color_and_padding.dart';
 import 'package:bigcart/Models/ProductModel.dart';
-import 'package:bigcart/Providers/Constants.dart';
 import 'package:bigcart/View/ProductDetailPage.dart';
 import 'package:flutter/material.dart';
 import 'Categories.dart';

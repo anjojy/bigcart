@@ -1,4 +1,4 @@
-import 'package:bigcart/Providers/Constants.dart';
+import 'package:bigcart/Constants/Color_and_padding.dart';
 import 'package:flutter/material.dart';
 
 class CartCounter extends StatefulWidget {

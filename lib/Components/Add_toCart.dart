@@ -1,5 +1,5 @@
+import 'package:bigcart/Constants/Color_and_padding.dart';
 import 'package:bigcart/Models/ProductModel.dart';
-import 'package:bigcart/Providers/Constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
